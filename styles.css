@@ -2,7 +2,8 @@
     scroll-behavior: smooth;
     font-family: Helvetica, sans-serif;
     --header-font-size: 1.6em;
-    --content-font-size: 1em;
+    --navbar-font-size: 1em;
+    --content-font-size: 0.8em;
 }
 
 main {
