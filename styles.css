@@ -1,36 +1,44 @@
 * {
   scroll-behavior: smooth;
   --header-font-family: Tahoma, Verdana;
-  --content-font-family: Georgia;
+  --content-font-family: Arial;
   --header-font-size: 1.8em;
+  --content-header-font-size: 1.1em;
   --navbar-font-size: 1em;
   --content-font-size: 1em;
-  --content-header-font-size: 1.2em;
-}
-
-main {
-  width: 100%;
+  --header-font-color: #111111;
+  --content-font-color: #555555;
+  line-height: 1.5;
 }
 
 #main-doc {
   width: 100%;
   display: flex;
-  background-color: chartreuse;
-  margin: 0;
 }
 
-#navbar {
+#nav-bar {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  background-color: aquamarine;
-  border-right: 2px solid black;
+  width: 25%;
+  border-right: 2px solid var(--content-font-color);
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .main-section {
   margin: 0, 20px;
+}
+
+.nav-header,
+.header,
+.content-header,
+.list-header {
+  color: var(--header-font-color);
 }
 
 .nav-header,
@@ -52,14 +60,13 @@ main {
 
 .nav-link {
   width: 100%;
-  color: black;
   text-decoration: none;
-  border-top: 1px solid black;
+  color: var(--content-font-color);
+  border-top: 1.5px solid var(--header-font-color);
 }
 
-.divider {
-  width: 100%;
-  border-top: 1px solid black;
+.nav-link:last-of-type {
+  border-bottom: 1.5px solid var(--header-font-color);
 }
 
 .nav-header,
@@ -73,15 +80,20 @@ main {
 }
 
 #content {
-  width: 70%;
-  background-color: bisque;
+  width: 75%;
   overflow-x: hidden;
+  position: absolute;
+  left: 25%;
 }
 
 .content-header {
   font-family: var(--header-font-family);
   font-size: var(--content-header-font-size);
   margin-left: 10px;
+}
+
+ul > li {
+  padding: 5px;
 }
 
 .main-section {
@@ -92,14 +104,14 @@ p:not([class]),
 ul:not([class]) {
   font-family: var(--content-font-family);
   font-size: var(--content-font-size);
+  color: var(--content-font-color);
   margin-left: 10px;
 }
 
 .code-box {
   display: flex;
   overflow-x: scroll;
-  /* width: 95%; */
-  background-color: black;
+  background-color: #444444;
   color: white;
   margin-left: 10px;
 }
@@ -113,6 +125,30 @@ img[class~="semantic"] {
   width: 250px;
 }
 
-/* p:not([class]) {
-    text-indent: 25px;
-} */
+@media (max-width: 720px) {
+  #main-doc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav-bar {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    border: 2px solid var(--content-font-color);
+  }
+
+  .nav-link:last-of-type {
+    border-bottom: 0;
+  }
+
+  #content {
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    left: 0;
+  }
+}
