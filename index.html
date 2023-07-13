@@ -10,7 +10,7 @@
     <main>
       <div id="main-doc">
         <nav id="navbar">
-          <header class="head">CSS Frameworks</header>
+          <header class="nav-header">CSS Frameworks</header>
           <div class="divider"></div>
           <a class="nav-link" href="#bootstrap"
             ><p class="nav-border">Bootstrap</p></a
@@ -28,8 +28,6 @@
             ><p class="nav-border">Semantic UI</p></a
           >
           <div class="divider"></div>
-          <a class="nav-link" href="#susy"><p class="nav-border">Susy</p></a>
-          <div class="divider"></div>
           <a class="nav-link" href="#materialize"
             ><p class="nav-border">Materialize</p></a
           >
@@ -40,18 +38,8 @@
             ><p class="nav-border">Skeleton</p></a
           >
           <div class="divider"></div>
-          <a class="nav-link" href="#miligram"
-            ><p class="nav-border">Miligram</p></a
-          >
-          <div class="divider"></div>
           <a class="nav-link" href="#tailwind-css"
             ><p class="nav-border">Tailwind CSS</p></a
-          >
-          <div class="divider"></div>
-          <a class="nav-link" href="#tacit"><p class="nav-border">Tacit</p></a>
-          <div class="divider"></div>
-          <a class="nav-link" href="#spectre"
-            ><p class="nav-border">Spectre</p></a
           >
           <div class="divider"></div>
           <a class="nav-link" href="#primer"
@@ -77,10 +65,11 @@
           <a class="nav-link" href="#open-props"
             ><p class="nav-border">Open Props</p></a
           >
+          <div class="divider"></div>
         </nav>
         <div id="content">
           <section class="main-section">
-            <header class="content-header">What is a CSS Framework?</header>
+            <header class="header">What is a CSS Framework?</header>
             <p>
               A CSS framework is a pre-prepared library of CSS code that
               provides a set of standardized styles, layouts, and components to
@@ -88,12 +77,12 @@
               applications.
             </p>
             <p>
-              They provide a collection of standardized styles, layouts, and
+              They provide a cullection of standardized styles, layouts, and
               components that can be easily applied to HTML elements, saving
               time and effort in the development process.
             </p>
-            <p>Key Features:</p>
-            <ol>
+            <p class="content-header">Key Features:</p>
+            <ul>
               <li>
                 Rapid Development: CSS frameworks offer a range of pre-designed
                 styles and components, allowing developers to quickly create
@@ -121,9 +110,9 @@
                 seamlessly across different web browsers, reducing the need for
                 extensive browser-specific CSS coding.
               </li>
-            </ol>
-            <p>Benefits</p>
-            <ol>
+            </ul>
+            <p class="content-header">Benefits</p>
+            <ul>
               <li>
                 Efficiency: By leveraging pre-built styles and components,
                 developers can significantly reduce the time and effort required
@@ -144,29 +133,41 @@
                 active communities, providing access to documentation,
                 tutorials, and support from fellow developers.
               </li>
-            </ol>
+            </ul>
             <p>Some popular frameworks are explained below.</p>
           </section>
           <section class="main-section" id="bootstrap">
-            <header class="content-header">Bootstrap</header>
+            <header class="header">Bootstrap</header>
             <p>
-              Bootstrap is a widely-used open-source front-end framework for
-              building responsive and mobile-first websites. It provides a
-              collection of pre-designed CSS and JavaScript components such as
-              buttons, forms, navigation bars, carousels, modals, and more.
-              These components can be easily customized using CSS classes and
-              can save developers a significant amount of time and effort in
-              building consistent and visually appealing user interfaces.
+              Bootstrap is a free, open source front-end development framework
+              for the creation of websites and web apps.
             </p>
             <p>
-              In addition to the built-in components, Bootstrap provides a set
-              of utility classes and helper functions that assist in styling and
-              layout adjustments. This makes it easier to handle common design
-              challenges and ensures a consistent look and feel across different
-              parts of a website.
+              Designed to enable responsive development of mobile-first
+              websites, Bootstrap provides a cullection of syntax for template
+              designs.
             </p>
-            <p>Pros</p>
-            <ol>
+            <p class="content-header">Example</p>
+            <p>
+              A full width grid that has four culumns, each taking up a full row
+              on xs screens, half a row on sm and md screens, and a quarter of
+              the width of the row on screens that are large and above:
+            </p>
+
+            <pre class="code-box">
+              <code>
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;cul-12 cul-sm-6 cul-lg-4&quot;&gt;First Culumn&lt;/div&gt;
+      &lt;div class=&quot;cul-12 cul-sm-6 cul-lg-4&quot;&gt;Second Culumn&lt;/div&gt;
+      &lt;div class=&quot;cul-12 cul-sm-6 cul-lg-4&quot;&gt;Third Culumn&lt;/div&gt;
+      &lt;div class=&quot;cul-12 cul-sm-6 cul-lg-4&quot;&gt;Forth Culumn&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+            </code>
+          </pre>
+            <p class="content-header">Pros</p>
+            <ul>
               <li>Simple and fast development process</li>
               <li>Wide range of pre-designed components and templates</li>
               <li>Responsive design ensuring compatibility across devices</li>
@@ -174,9 +175,9 @@
                 Strong community support with plenty of resources and plugins
                 available
               </li>
-            </ol>
-            <p>Cons</p>
-            <ol>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
               <li>Lack of design flexibility and limited creativity</li>
               <li>
                 Learning curve for customization beyond the default styles
@@ -189,353 +190,430 @@
                 Updates and changes in newer versions may require adjustments in
                 existing projects
               </li>
-            </ol>
+            </ul>
           </section>
           <section class="main-section" id="foundation">
-            <header class="content-header">Foundation</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Foundation</header>
+            <p>
+              Foundation is a responsive front-end framework that provides a set
+              of CSS touls focusing on mobile-first design and accessibility.
+            </p>
+            <p>
+              Foundation provides a responsive grid and HTML and CSS UI
+              components, templates, and code snippets, including typography,
+              forms, buttons, navigation and other interface elements, as well
+              as optional functionality provided by JavaScript extensions.
+            </p>
+            <p class="content-header">Example</p>
+            <p>
+              Foundation includes styles for all of the header elements, which
+              are balanced and based on a scale. We have six heading tags from
+              &lt;h1&gt; to &lt;h6&gt;, where the &lt;h1&gt; tag focuses on the
+              most important content of a page and the &lt;h6&gt; tag focuses on
+              the least important content.
+            </p>
+            <pre class="code-box">
+              <code>
+  &lt;h1&gt;Heading &lt;small&gt;Secondary Heading&lt;/small&gt;&lt;/h1&gt;
+  &lt;h2 class=&quot;subheader&quot;&gt;Heading &lt;small&gt;Secondary Heading&lt;/small&gt; &lt;/h2&gt;
+  &lt;h3 class=&quot;subheader&quot;&gt;Heading &lt;small&gt;Secondary Heading&lt;/small&gt;&lt;/h3&gt;
+  &lt;h4&gt;Heading &lt;small&gt;Secondary Heading&lt;/small&gt;&lt;/h4&gt;
+  &lt;h5&gt;Heading &lt;small&gt;Secondary Heading&lt;/small&gt;&lt;/h5&gt;
+  &lt;h6&gt;Heading &lt;small&gt;Secondary Heading&lt;/small&gt;&lt;/h6&gt;
+              </code>
+            </pre>
+            <p class="content-header">Output</p>
+            <img src="/images/foundation-output.png" alt="foundation-output" />
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Strong focus on responsive web design</li>
+              <li>High level of customization</li>
+              <li>Comprehensive documentation</li>
+              <li>Prioritizes accessibility</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>
+                Steeper learning curve compared to some other CSS frameworks
+              </li>
+              <li>Larger file sizes, which may impact website loading times</li>
+              <li>
+                Limit in availability of resources and community-driven plugins.
+              </li>
+            </ul>
           </section>
           <section class="main-section" id="bulma">
-            <header class="content-header">Bulma</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Bulma</header>
+            <p>
+              Bulma is a free class-based framework for CSS. It allows
+              developers to implement CSS on web pages more efficiently than
+              plain CSS.
+            </p>
+            <p>
+              Bulma is built on Flexbox, a CSS layout model that automatically
+              adjusts the width of a page element based on the width of its
+              container.
+            </p>
+            <p class="content-header">Example</p>
+            <p>Some simple buttons using Bulma:</p>
+            <pre class="code-box">
+              <code>
+  &lt;button class=&quot;button is-primary is-small&quot;&gt;Small&lt;/button&gt;
+  &lt;button class=&quot;button is-link&quot;&gt;Default&lt;/button&gt;
+  &lt;button class=&quot;button is-warning is-normal&quot;&gt;Normal&lt;/button&gt;
+  &lt;button class=&quot;button is-success is-medium&quot;&gt;Medium&lt;/button&gt;
+  &lt;button class=&quot;button is-danger  is-large&quot;&gt;Large&lt;/button&gt;
+              </code>
+            </pre>
+            <p class="content-header">Output</p>
+            <img src="/images/bulma-css-buttons.png" alt="bulma-output" />
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Lightweight and fast CSS framework</li>
+              <li>Responsive design built with a mobile-first approach</li>
+              <li>
+                Flexbox-based allowing for flexible and responsive designs
+              </li>
+              <li>Wide range of customizable components and utilities</li>
+              <li>Comprehensive and well-organized documentation</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>
+                Limited Browser Support, so additional CSS or JavaScript may be
+                required for compatibility
+              </li>
+              <li>Less mature ecosystem</li>
+              <li>Learning curve for beginners</li>
+            </ul>
           </section>
           <section class="main-section" id="uikit">
-            <header class="content-header">UIkit</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">UIkit</header>
+            <p>
+              UIkit is a lightweight and modular front-end framework for
+              developing fast and powerful web interfaces.
+            </p>
+            <p>
+              UIkit gives a comprehensive cullection of HTML, CSS, and JS
+              components which is simple to use, easy to customize and
+              extendable.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Lightweight nature</li>
+              <li>Modular and customizable</li>
+              <li>Responsive design</li>
+              <li>Comprehensive Documentation</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Limited component variety</li>
+              <li>Advance features like animations can affect performance</li>
+              <li>Samller community</li>
+            </ul>
           </section>
           <section class="main-section" id="semantic-ui">
-            <header class="content-header">Semantic UI</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-          </section>
-          <section class="main-section" id="susy">
-            <header class="content-header">Susy</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Semantic UI</header>
+            <p>
+              Semantic UI is an open-source framework that uses CSS and jQuery
+              to build great user interfaces.
+            </p>
+            <p>
+              It is the same as a bootstrap for use and has great different
+              elements to use to make the websites look more amazing. It uses a
+              class to add CSS to the elements.
+            </p>
+            <p class="content-header">Example</p>
+            <p>Panels like in bootstrap:</p>
+            <pre class="code-box">
+              <code>
+  &lt;div class=&quot;culumn panel&quot;&gt;
+    &lt;div class=&quot;ui secondary inverted top attached segment&quot;&gt;Panel title&lt;/div&gt;
+    &lt;div class=&quot;ui bottom attached segment&quot;&gt;Panel content&lt;/div&gt;
+    &lt;div class=&quot;ui inverted top attached segment&quot;&gt;Panel title&lt;/div&gt;
+    &lt;div class=&quot;ui bottom attached segment&quot;&gt;Panel content&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </pre>
+            <p class="content-header">Output</p>
+            <img src="/images/semantic-ui-output.PNG" alt="semantic-ui-output" class="semantic"/>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Intuitive and human-friendly class names</li>
+              <li>Comprehensive set of pre-designed components and themes</li>
+              <li>Responsive design approach</li>
+              <li>Built-in support for accessibility</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Larger file size compared to some other CSS frameworks</li>
+              <li>Steeper learning curve for beginners</li>
+              <li>
+                Limited number of available themes compared to some other
+                frameworks
+              </li>
+              <li>Customization options may be limited</li>
+            </ul>
           </section>
           <section class="main-section" id="materialize">
-            <header class="content-header">Materialize</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Materialize</header>
+            <p>
+              Materialize is a UI component library created with CSS,
+              JavaScript, and HTML.
+            </p>
+            <p>
+              Materialize UI components help in constructing attractive,
+              consistent, and functional web pages and web apps, while adhering
+              to modern web design principles such as browser portability,
+              device independence, and graceful degradation.
+            </p>
+            <p class="content-header">Example</p>
+            <pre class="code-box">
+              <code>
+  &lt;div class=&quot;card-panel teal lighten-2&quot;&gt;&lt;h3&gt;Hello World!&lt;/h3&gt;&lt;/div&gt;
+              </code>
+            </pre>
+            <p class="content-header">Output</p>
+            <img src="/images/materialize-output.jpg" alt="materialize-output" class="semantic"/>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>
+                Modern and visually appealing design inspired by Google's
+                Material Design principles
+              </li>
+              <li>Comprehensive component library</li>
+              <li>Easy to use and implement</li>
+              <li>Active community and support</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Limited customization options</li>
+              <li>Relatively large file size</li>
+              <li>
+                Dependency on JavaScript for some of its interactive components
+              </li>
+            </ul>
           </section>
           <section class="main-section" id="pure">
-            <header class="content-header">Pure</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Pure</header>
+            <p>
+              Pure.CSS is a framework of CSS. It is a cullection of small sets
+              of responsive CSS modules which can be used in any web
+              application.
+            </p>
+            <p>
+              It is used to create faster, beautiful and responsive websites. It
+              can be used as an alternative of Bootstrap.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Lightweight and fast</li>
+              <li>Sulid foundation for customization</li>
+              <li>Flexibility in terms of layout and styling options</li>
+              <li>
+                Smaller learning curve compared to more complex frameworks
+              </li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Limited functionality</li>
+              <li>May not be fully compatible with all browsers</li>
+              <li>Less design consistency</li>
+            </ul>
           </section>
           <section class="main-section" id="skeleton">
-            <header class="content-header">Skeleton</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-          </section>
-          <section class="main-section" id="miligram">
-            <header class="content-header">Miligram</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Skeleton</header>
+            <p>
+              Skeleton is a small cullection of CSS files that can help in
+              rapidly developing sites that look beautiful at any size, be it a
+              17 inch laptop screen or an iPhone.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Lightweight design</li>
+              <li>Responsive design</li>
+              <li>Easy to customize</li>
+              <li>Minimalistic design</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Limited component library</li>
+              <li>Less community support</li>
+              <li>Less flexibility</li>
+            </ul>
           </section>
           <section class="main-section" id="tailwind-css">
-            <header class="content-header">Tailwind class</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-          </section>
-          <section class="main-section" id="tacit">
-            <header class="content-header">Tacit</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-          </section>
-          <section class="main-section" id="spectre">
-            <header class="content-header">Spectre</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Tailwind class</header>
+            <p>
+              Tailwind CSS is basically a utility-first CSS framework for
+              rapidly building custom user interfaces.
+            </p>
+            <p>
+              Tailwind doesn't offer fully styled components like buttons,
+              dropdowns, and navbars. Instead, it offers utility classes so you
+              can create your own reusable components.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Highly customizable</li>
+              <li>Rapid development</li>
+              <li>Responsive design</li>
+              <li>Smaller file size</li>
+              <li>Active community</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Steeper learning curve</li>
+              <li>Increased HTML markup</li>
+              <li>Lack of predefined styles</li>
+            </ul>
           </section>
           <section class="main-section" id="primer">
-            <header class="content-header">Primer</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Primer</header>
+            <p>
+              Primer CSS is a free open-source CSS framework that is built with
+              the GitHub design system to provide support to the broad spectrum
+              of Github websites.
+            </p>
+            <p>
+              It creates the foundation of the basic style elements such as
+              spacing, typography, and culor. This systematic method makes sure
+              that our patterns are steady and interoperable with every other.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Lightweight and minimalistic</li>
+              <li>Responsive design approach</li>
+              <li>Wide range of pre-designed components and utilities</li>
+              <li>Flexible grid system for creating responsive layouts</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>
+                Limited number of pre-designed components compared to others
+              </li>
+              <li>
+                May require additional customization for complex or unique
+                design requirements
+              </li>
+              <li>Less widely adopted</li>
+            </ul>
           </section>
           <section class="main-section" id="fictoan">
-            <header class="content-header">Fictoan</header>
+            <header class="header">Fictoan</header>
+            <p>
+              Fictoan is an intuitive framework for designers looking to code
+              and rapidly iterate on UI.
+            </p>
             <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Lightweight and fast</li>
+              <li>Intuitive attributes</li>
+              <li>Responsive design</li>
+              <li>Minimal learning curve</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Limited pre-designed components</li>
+              <li>Less documentation</li>
+              <li>Limited browser compatibility</li>
+            </ul>
           </section>
           <section class="main-section" id="vanilla">
-            <header class="content-header">Vanilla</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Vanilla</header>
+            <p>
+              Vanilla CSS Framework is a utility class-based and customizable
+              SASS library.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Lightweight and minimalistic</li>
+              <li>
+                Provides complete contrul over the design and customization
+              </li>
+              <li>No additional dependencies or learning curve</li>
+              <li>
+                Allows for a more unique and personalized design aesthetic
+              </li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Lack of pre-designed components</li>
+              <li>May not have built-in responsiveness</li>
+              <li>Limited community support and resources</li>
+              <li>
+                May not have as many advanced features or plugins available
+              </li>
+            </ul>
           </section>
           <section class="main-section" id="fomantic=ui">
-            <header class="content-header">Fomantic UI</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Fomantic UI</header>
+            <p>
+              Fomantic-UI is a development framework that helps create
+              beautiful, responsive layouts using human-friendly HTML.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Semantic markup</li>
+              <li>Responsive components and layouts</li>
+              <li>Wide range of customization options</li>
+              <li>Easy code maintainence</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Steep learning curve</li>
+              <li>Limited documentation</li>
+              <li>Chances of styling conflicts</li>
+            </ul>
           </section>
           <section class="main-section" id="blaze-ui">
-            <header class="content-header">Blaze UI</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Blaze UI</header>
+            <p>
+              Blaze UI is a free & open-source (MIT Licence) Framework with a
+              lightweight UI Toulkit that provides a great structure for
+              building websites quickly with a scalable and maintainable
+              foundation.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Lightweight and fast</li>
+              <li>Modular and customizable</li>
+              <li>Responsive design</li>
+              <li>Prioritizes accessibility</li>
+              <li>Open-source and community-driven</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Smaller community</li>
+              <li>Limited JavaScript support</li>
+            </ul>
           </section>
           <section class="main-section" id="open-props">
-            <header class="content-header">Open Props</header>
-            <p></p>
-            <p></p>
-            <p>Pros</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <p>Cons</p>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
+            <header class="header">Open Props</header>
+            <p>
+              Open Props is a non-prescriptive CSS library that allows
+              developers to create custom classes instead of strictly using
+              predefined class names.
+            </p>
+            <p class="content-header">Pros</p>
+            <ul>
+              <li>Highly flexible and customizable</li>
+              <li>Incrementally adoptable</li>
+              <li>Cross-browser compatibility</li>
+            </ul>
+            <p class="content-header">Cons</p>
+            <ul>
+              <li>Smaller community</li>
+              <li>Limited documentation</li>
+            </ul>
+          </section>
+          <section class="main-section">
+            <header class="header">Reference</header>
+            <p>All the documentation in this page is taken from multiple documentation sites.</p>
           </section>
         </div>
       </div>
-      <footer class="foot"></footer>
     </main>
   </body>
 </html>
